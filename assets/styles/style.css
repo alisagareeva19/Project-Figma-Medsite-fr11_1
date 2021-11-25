@@ -58,6 +58,116 @@
     font-style: normal;
 }
 
+
+
+
+.header-container {
+    background-color: #E95258;
+}
+
+.header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "logo menu";
+    display: grid;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+.logo.header {
+    display: grid;
+    grid-area: logo;
+    width: 206px;
+    height: 44.87px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-area: menu;
+    background-color: rgba(249, 249, 249, 1);
+    justify-items: center;
+    align-self: center;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+}
+
+.polygon {
+    width: 6px;
+    height: 6px;
+}
+
+.h-menu {
+    text-decoration: none;
+    color: rgba(50, 73, 94, 1);
+    font-family: TT Hoves;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.news {
+    display: grid;
+    background-color: #F9F9F9;
+}
+
+.news-container {
+    display: grid;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 4rem;
+}
+
+.heading {
+    font-family: TT Hoves;
+    color: rgba(50, 73, 94, 1);
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.news-col {
+    grid-template-columns: repeat(4 1fr);
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button {
+    display: grid;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    font-family: TT Hoves;
+    color: #32495E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: #F9F9F9;
+    justify-self: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
     .footer {
         background-color: #333333;
