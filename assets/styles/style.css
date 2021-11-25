@@ -58,96 +58,113 @@
     font-style: normal;
 }
 
+@media screen and (min-width: 768px) {
+    .footer {
+        background-color: #333333;
+        font-family: "TT Hoves";
+        height: 302px;
+        width: 100%;
+        color: #F9F9F9;
+    }
 
-.footer {
-    background-color: #333333;
-    font-family: TT Hoves;
-    height: 302px;
-    width: 100%;
-    color: #F9F9F9;
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "lf ms cont ut";
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    .logo-footer {
+        display: grid;
+        grid-area: lf;
+    }
+
+    .logo-footer__law {
+        align-self: end;
+        color: #F9F9F9;
+        font-family: TT Hoves;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+
+    }
+
+    .logo-footer__img {
+        width: 90%;
+        height: auto;
+    }
+
+    .map-site {
+        grid-area: ms;
+    }
+
+    .map-site__h1,
+    .contacts__h1 {
+        font-family: TT Hoves;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+
+    }
+
+    .map-site__navbar,
+    .contacts_call {
+        margin-top: 20px;
+    }
+
+    .map-site__navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__footer,
+    .contacts_call,
+    .contacts_call2,
+    .contacts_email {
+        text-decoration: none;
+        color: #F9F9F9;
+        margin-bottom: 10px;
+        font-family: TT Hoves;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .contacts {
+        grid-area: cont;
+    }
+
+    .contacts_social {
+        display: flex;
+        margin: 0 -5px;
+    }
+
+    .social {
+        margin: 0 5px;
+    }
+
+
+    .up {
+        grid-area: ut;
+        justify-self: end;
+    }
+
+    .up_strelka {
+        margin-bottom: 1rem;
+    }
+
+    .up_text {
+        transform: rotate(-90deg);
+
+    }
 }
 
-.footer-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "lf ms cont ut";
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    padding: 2rem;
-}
-
-.logo-footer {
-    display: grid;
-    grid-area: lf;
-}
-
-.logo-footer__law {
-    align-self: end;
-    color: #F9F9F9;
-}
-
-.map-site {
-    grid-area: ms;
-}
-
-.map-site__h1,
-.contacts__h1 {
-    font-family: TT Hoves;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 800;
-
-}
-
-.map-site__navbar,
-.contacts_call {
-    margin-top: 20px;
-}
-
-.map-site__navbar {
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar__footer,
-.contacts_call,
-.contacts_call2,
-.contacts_email {
-    text-decoration: none;
-    color: #F9F9F9;
-    margin-bottom: 10px;
-    font-family: TT Hoves;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.contacts {
-    grid-area: cont;
-}
-
-.contacts_social {
-    display: flex;
-    margin: 0 -5px;
-}
-
-.social {
-    margin: 0 5px;
-}
-
-
-.up {
-    grid-area: ut;
-    justify-self: end;
-}
-
-.up_strelka {
-    margin-bottom: 1rem;
-}
-
-.up_text {
-    transform: rotate(-90deg);
-
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
 }
