@@ -305,8 +305,7 @@
     width: 100%;
 }
 
-.contacts-map__h1,
-    {
+.contacts-map__h1 {
     font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 800;
@@ -337,7 +336,7 @@
     color: #32495E;
     margin-top: 1rem;
 }
-}
+
 
 @media screen and (max-width: 767px) {
 
@@ -377,8 +376,7 @@
         width: 90%;
     }
 
-    .contacts-map__h1,
-        {
+    .contacts-map__h1 {
         font-family: 'TT Hoves';
         font-style: normal;
         font-weight: 800;
