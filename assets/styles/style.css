@@ -109,6 +109,140 @@
     font-weight: 500;
 }
 
+
+
+
+/* слоган */
+​ .twin {
+    background: #E95258;
+}
+
+​ .twin:last-of-type {
+    background: #F9F9F9;
+}
+
+​ .KRcentr h1,
+.KRcentr p,
+.KRcentr ul {
+    font-family: TT Hoves;
+    color: #F9F9F9;
+    font-style: normal;
+    text-align: right;
+    margin-right: 100px;
+}
+
+​ .twin h1 {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+​ .twin p {
+    font-size: 14px;
+    font-weight: 600;
+    width: 220px;
+    height: 102px;
+    margin-top: 60px;
+}
+
+​ .twin ul {
+    font-size: 14px;
+}
+
+​ .TRcentr h1,
+.TRcentr p,
+.TRcentr ul {
+    font-family: TT Hoves;
+    color: #32495E;
+    font-style: normal;
+    margin-left: 100px;
+}
+
+​ .TRcentr ul {
+    margin-left: 75px;
+}
+
+​ .KRcentr p {
+    margin-left: 440px;
+}
+
+​ .KRcentr ul {
+    direction: rtl;
+    float: left;
+    margin-top: -1px;
+    margin-left: 546px;
+    margin-right: 74px;
+}
+
+​ .twin li {
+    list-style-type: circle;
+}
+
+​ .twin .button {
+    background: #E95258;
+    color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+    clear: both;
+    margin-left: 501px;
+    margin-top: 200px;
+}
+
+​ .twin:last-of-type .button {
+    background: #F9F9F9;
+    color: #32495E;
+    border: 1px solid #32495E;
+    margin-left: 100px;
+    margin-top: 122px;
+}
+
+​ .TRcentr {
+    clear: right;
+}
+
+​ .KRcentr {
+    clear: left;
+}
+
+​ .sloganKR1 {
+    float: left;
+    margin-top: -440px;
+}
+
+​ .sloganTR1 {
+    float: right;
+    margin-top: -380px;
+}
+
+​
+
+/* If no grid support, limit width to 50em and center align */
+@supports not (display: grid) {
+    .slogan {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+}
+
+​
+
+/* CSS Grid layout for wider screens, when browser supports grid: */
+@media screen and (min-width: 600px) {
+    @supports (display: grid) {
+        ​ .slogan {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(auto, 1fr));
+        }
+    }
+}
+
+​
+/* слоган конец */
+
+
+
 .news {
     display: grid;
     background-color: #F9F9F9;
