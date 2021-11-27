@@ -78,7 +78,7 @@
 }
 
 
-.logo.header {
+.header__logo {
     display: grid;
     grid-area: logo;
     width: 206px;
@@ -96,12 +96,12 @@
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
 }
 
-.polygon {
+.menu__element {
     width: 6px;
     height: 6px;
 }
 
-.h-menu {
+.menu__items {
     text-decoration: none;
     color: rgba(50, 73, 94, 1);
     font-family: TT Hoves;
@@ -217,19 +217,23 @@
     margin-top: -380px;
 }
 
-​
 
-/* If no grid support, limit width to 50em and center align */
+.slogan {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+​
+/* If no grid support, limit width to 50em and center align 
 @supports not (display: grid) {
     .slogan {
         max-width: 50em;
         margin: 0 auto;
     }
-}
+}*/
 
 ​
-
-/* CSS Grid layout for wider screens, when browser supports grid: */
+/* CSS Grid layout for wider screens, when browser supports grid: 
 @media screen and (min-width: 600px) {
     @supports (display: grid) {
         ​ .slogan {
@@ -237,14 +241,14 @@
             grid-template-columns: repeat(2, minmax(auto, 1fr));
         }
     }
-}
+}*/
 
 ​
 /* слоган конец */
 
 
 
-.news {
+.block-news {
     display: grid;
     background-color: #F9F9F9;
 }
@@ -257,7 +261,7 @@
     padding: 4rem;
 }
 
-.heading {
+.news__heading {
     font-family: 'TT Hoves';
     color: rgba(50, 73, 94, 1);
     font-size: 44px;
@@ -265,7 +269,7 @@
     font-weight: 800;
 }
 
-.news-col {
+.news__blocks {
     grid-template-columns: repeat(4 1fr);
     gap: 15px;
     width: 100%;
@@ -291,6 +295,8 @@
     justify-self: center;
     align-items: center;
     margin-top: 40px;
+
+    cursor: pointer;
 }
 
 .block-contacts {
