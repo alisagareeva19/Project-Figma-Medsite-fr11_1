@@ -14,10 +14,10 @@
     font-family: 'TT Hoves';
     src: url("fonts/TTHoves-Medium.eot");
     src: local('TT Hoves Medium'), local('TTHoves-Medium'),
-        url('TTHoves-Medium.eot?#iefix') format('embedded-opentype'),
-        url('TTHoves-Medium.woff2') format('woff2'),
-        url('TTHoves-Medium.woff') format('woff'),
-        url('TTHoves-Medium.ttf') format('truetype');
+        url("fonts/TTHoves-Medium.eot?#iefix") format('embedded-opentype'),
+        url("fonts/TTHoves-Medium.woff2") format('woff2'),
+        url("fonts/TTHoves-Medium.woff") format('woff'),
+        url("fonts/TTHoves-Medium.ttf") format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -26,10 +26,10 @@
     font-family: 'TT Hoves';
     src: url("fonts/TTHoves-Bold.eot");
     src: local('TT Hoves Bold'), local('TTHoves-Bold'),
-        url('TTHoves-Bold.eot?#iefix') format('embedded-opentype'),
-        url('TTHoves-Bold.woff2') format('woff2'),
-        url('TTHoves-Bold.woff') format('woff'),
-        url('TTHoves-Bold.ttf') format('truetype');
+        url("fonts/TTHoves-Bold.eot?#iefix") format('embedded-opentype'),
+        url("fonts/TTHoves-Bold.woff2") format('woff2'),
+        url("fonts/TTHoves-Bold.woff") format('woff'),
+        url("fonts/TTHoves-Bold.ttf") format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -38,10 +38,10 @@
     font-family: 'TT Hoves';
     src: url("fonts/TTHoves-DemiBold.eot");
     src: local('TT Hoves DemiBold'), local('TTHoves-DemiBold'),
-        url('TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'),
-        url('TTHoves-DemiBold.woff2') format('woff2'),
-        url('TTHoves-DemiBold.woff') format('woff'),
-        url('TTHoves-DemiBold.ttf') format('truetype');
+        url("fonts/TTHoves-DemiBold.eot?#iefix") format('embedded-opentype'),
+        url("fonts/TTHoves-DemiBold.woff2") format('woff2'),
+        url("fonts/TTHoves-DemiBold.woff") format('woff'),
+        url("fonts/TTHoves-DemiBold.ttf") format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -50,10 +50,10 @@
     font-family: 'TT Hoves';
     src: url("fonts/TTHoves-ExtraBold.eot");
     src: local('TT Hoves ExtraBold'), local('TTHoves-ExtraBold'),
-        url('TTHoves-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('TTHoves-ExtraBold.woff2') format('woff2'),
-        url('TTHoves-ExtraBold.woff') format('woff'),
-        url('TTHoves-ExtraBold.ttf') format('truetype');
+        url("fonts/TTHoves-ExtraBold.eot?#iefix") format('embedded-opentype'),
+        url("fonts/TTHoves-ExtraBold.woff2") format('woff2'),
+        url("fonts/TTHoves-ExtraBold.woff") format('woff'),
+        url("fonts/TTHoves-ExtraBold.ttf") format('truetype');
     font-weight: 800;
     font-style: normal;
 }
@@ -125,7 +125,7 @@
 ​ .KRcentr h1,
 .KRcentr p,
 .KRcentr ul {
-    font-family: TT Hoves;
+    font-family: 'TT Hoves';
     color: #F9F9F9;
     font-style: normal;
     text-align: right;
@@ -156,7 +156,7 @@
 ​ .TRcentr h1,
 .TRcentr p,
 .TRcentr ul {
-    font-family: TT Hoves;
+    font-family: 'TT Hoves';
     color: #32495E;
     font-style: normal;
     margin-left: 100px;
@@ -425,7 +425,7 @@
     .contacts-map__h2 {
         grid-row: 1/2;
         grid-column: 1/2;
-        font-family: TT Hoves;
+        font-family: 'TT Hoves';
         font-style: normal;
         font-weight: 800;
         font-size: 3rem;
@@ -470,7 +470,7 @@
     }
 
     .contacts-map__descrip {
-        font-family: TT Hoves;
+        font-family: 'TT Hoves';
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -497,7 +497,7 @@
 
     .contacts-map__h2 {
         grid-row: 1/2;
-        font-family: TT Hoves;
+        font-family: 'TT Hoves';
         font-style: normal;
         font-weight: 800;
         font-size: 2rem;
@@ -537,7 +537,7 @@
     }
 
     .contacts-map__descrip {
-        font-family: TT Hoves;
+        font-family: 'TT Hoves';
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -547,7 +547,7 @@
 
 /* блок нас рекоммендуют */
 .recommend__h2 {
-    font-family: TT Hoves;
+    font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 800;
     font-size: 3rem;
