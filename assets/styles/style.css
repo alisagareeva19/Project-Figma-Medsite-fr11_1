@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'TT Hoves';
-    src: url('TTHoves-Regular.eot');
+    src: url("fonts/TTHoves-Regular.eot");
     src: local('TT Hoves Regular'), local('TTHoves-Regular'),
-        url('TTHoves-Regular.eot?#iefix') format('embedded-opentype'),
-        url('TTHoves-Regular.woff2') format('woff2'),
-        url('TTHoves-Regular.woff') format('woff'),
-        url('TTHoves-Regular.ttf') format('truetype');
+        url("fonts/TTHoves-Regular.eot?#iefix") format('embedded-opentype'),
+        url("fonts/TTHoves-Regular.woff2") format('woff2'),
+        url("fonts/TTHoves-Regular.woff") format('woff'),
+        url("fonts/TTHoves-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Hoves';
-    src: url('TTHoves-Medium.eot');
+    src: url("fonts/TTHoves-Medium.eot");
     src: local('TT Hoves Medium'), local('TTHoves-Medium'),
         url('TTHoves-Medium.eot?#iefix') format('embedded-opentype'),
         url('TTHoves-Medium.woff2') format('woff2'),
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'TT Hoves';
-    src: url('TTHoves-Bold.eot');
+    src: url("fonts/TTHoves-Bold.eot");
     src: local('TT Hoves Bold'), local('TTHoves-Bold'),
         url('TTHoves-Bold.eot?#iefix') format('embedded-opentype'),
         url('TTHoves-Bold.woff2') format('woff2'),
@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: 'TT Hoves';
-    src: url('TTHoves-DemiBold.eot');
+    src: url("fonts/TTHoves-DemiBold.eot");
     src: local('TT Hoves DemiBold'), local('TTHoves-DemiBold'),
         url('TTHoves-DemiBold.eot?#iefix') format('embedded-opentype'),
         url('TTHoves-DemiBold.woff2') format('woff2'),
@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: 'TT Hoves';
-    src: url('TTHoves-ExtraBold.eot');
+    src: url("fonts/TTHoves-ExtraBold.eot");
     src: local('TT Hoves ExtraBold'), local('TTHoves-ExtraBold'),
         url('TTHoves-ExtraBold.eot?#iefix') format('embedded-opentype'),
         url('TTHoves-ExtraBold.woff2') format('woff2'),
@@ -74,6 +74,7 @@
     height: 80%;
     margin: auto;
     padding: 2rem;
+
 }
 
 
@@ -257,7 +258,7 @@
 }
 
 .heading {
-    font-family: TT Hoves;
+    font-family: 'TT Hoves';
     color: rgba(50, 73, 94, 1);
     font-size: 44px;
     font-style: normal;
@@ -280,7 +281,7 @@
     box-sizing: border-box;
     border-radius: 25px;
 
-    font-family: TT Hoves;
+    font-family: 'TT Hoves';
     color: #32495E;
     font-size: 14px;
     font-style: normal;
@@ -326,7 +327,7 @@
     .logo-footer__law {
         align-self: end;
         color: #F9F9F9;
-        font-family: TT Hoves;
+        font-family: 'TT Hoves';
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -344,7 +345,7 @@
 
     .map-site__h1,
     .contacts__h1 {
-        font-family: TT Hoves;
+        font-family: 'TT Hoves';
         font-size: 16px;
         font-style: normal;
         font-weight: 800;
