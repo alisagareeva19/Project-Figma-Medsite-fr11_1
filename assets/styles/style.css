@@ -450,7 +450,7 @@
     /* блок футера */
     .footer {
         background-color: #333333;
-        font-family: "TT Hoves";
+        font-family: 'TT Hoves';
         height: 302px;
         width: 100%;
         color: #F9F9F9;
@@ -555,7 +555,7 @@
     /* блок контакты */
     .contacts-map {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 35% 27% 30% 1fr;
         grid-template-rows: 0.3fr 1.5fr 0.7fr;
         margin: auto;
         grid-gap: 2rem;
@@ -570,7 +570,7 @@
         font-family: 'TT Hoves';
         font-style: normal;
         font-weight: 800;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #32495E;
     }
 
@@ -619,6 +619,54 @@
         color: #32495E;
         margin-top: 1rem;
     }
+
+    /* блок нас рекоммендуют */
+    .recommend__h2 {
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: #32495E;
+        grid-area: rh;
+    }
+
+    .recommend-image1 {
+        grid-area: ri1;
+        max-width: 100%;
+    }
+
+    .recommend-image2 {
+        grid-area: ri2;
+        max-width: 100%;
+    }
+
+    .recommend-image3 {
+        grid-area: ri3;
+        max-width: 100%;
+    }
+
+    .recommend-image4 {
+        grid-area: ri4;
+        max-width: 100%;
+    }
+
+    .recommend-image5 {
+        grid-area: ri5;
+        max-width: 100%;
+    }
+
+    .recommend {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "rh rh rh rh rh"
+            "ri1 ri2 ri3 ri4 ri5";
+        margin: auto;
+        grid-gap: 1rem;
+        width: 80%;
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -635,6 +683,7 @@
         grid-template-rows: 0.3fr 1fr 0.5fr 0.5fr;
         max-width: 80%;
         margin: auto;
+        padding-bottom: 7%;
     }
 
     .contacts-map__h2 {
@@ -642,7 +691,7 @@
         font-family: 'TT Hoves';
         font-style: normal;
         font-weight: 800;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #32495E;
     }
 
@@ -685,52 +734,180 @@
         font-weight: 400;
         color: #32495E;
     }
+
+    /* блок нас рекоммендуют */
+    .recommend__h2 {
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: #32495E;
+        grid-area: rh;
+    }
+
+    .recommend-image1 {
+        grid-area: ri1;
+        max-width: 100%;
+    }
+
+    .recommend-image2 {
+        grid-area: ri2;
+        max-width: 100%;
+    }
+
+    .recommend-image3 {
+        grid-area: ri3;
+        max-width: 100%;
+    }
+
+    .recommend-image4 {
+        grid-area: ri4;
+        max-width: 100%;
+    }
+
+    .recommend-image5 {
+        grid-area: ri5;
+        max-width: 100%;
+    }
+
+    .recommend {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "rh rh rh rh rh"
+            "ri1 ri2 ri3 ri4 ri5";
+        margin: auto;
+        grid-gap: 1rem;
+        width: 80%;
+        padding: 1rem;
+    }
 }
 
-/* блок нас рекоммендуют */
-.recommend__h2 {
+
+/* блоr вопрос-ответ*/
+.quest {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 20% repeat(8, 1fr);
+    grid-template-areas:
+        "h1 h1 h1"
+        "q1 st1 qh2"
+        "q2 st2 qp"
+        "q3 st3 qp"
+        "q4 st4 qp"
+        "q5 st5 qp"
+        "q6 st6 qp"
+        "q7 st7 qp"
+        "q8 st8 qp";
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 3%;
+
+
+}
+
+.block-questions {
+    background-color: #32495E;
+
+}
+
+.quest__h1 {
+    grid-area: h1;
     font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 800;
-    font-size: 3rem;
-    color: #32495E;
-    grid-area: rh;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20%;
+    background: #49647D;
+    border: 1px solid #000000;
+
 }
 
-.recommend-image1 {
-    grid-area: ri1;
-    max-width: 100%;
+.q1 {
+    grid-area: q1
 }
 
-.recommend-image2 {
-    grid-area: ri2;
-    max-width: 100%;
+.q2 {
+    grid-area: q2
 }
 
-.recommend-image3 {
-    grid-area: ri3;
-    max-width: 100%;
+.q3 {
+    grid-area: q3
 }
 
-.recommend-image4 {
-    grid-area: ri4;
-    max-width: 100%;
+.q4 {
+    grid-area: q4
 }
 
-.recommend-image5 {
-    grid-area: ri5;
-    max-width: 100%;
+.q5 {
+    grid-area: q5
 }
 
-.recommend {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "rh rh rh rh rh"
-        "ri1 ri2 ri3 ri4 ri5";
-    margin: auto;
-    grid-gap: 1rem;
-    width: 80%;
-    padding: 1rem;
+.q6 {
+    grid-area: q6
+}
+
+.q7 {
+    grid-area: q7
+}
+
+.q8 {
+    grid-area: q8
+}
+
+.strel1 {
+    grid-area: st1
+}
+
+.strel2 {
+    grid-area: st2
+}
+
+.strel3 {
+    grid-area: st3
+}
+
+.strel4 {
+    grid-area: st4
+}
+
+.strel5 {
+    grid-area: st5
+}
+
+.strel6 {
+    grid-area: st6
+}
+
+.strel7 {
+    grid-area: st7
+}
+
+.strel8 {
+    grid-area: st8
+}
+
+.quest__h2 {
+    grid-area: qh2;
+}
+
+.quest__p {
+    grid-area: qp;
+    font-family: 'TT Hoves';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+
+}
+
+.q,
+.quest__h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 800;
+    color: white;
 }
