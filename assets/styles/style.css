@@ -1500,8 +1500,8 @@
 /* блоr вопрос-ответ*/
 .quest {
     display: grid;
-    grid-template-columns: 20% 20% 60%;
-    grid-template-rows: 20% repeat(8, 1fr);
+    grid-template-columns: 30% 10% 60%;
+    grid-template-rows: 25% repeat(8, 1fr);
     grid-template-areas:
         "h1 h1 h1"
         "q1 st1 qh2"
@@ -1512,17 +1512,17 @@
         "q6 st6 qp"
         "q7 st7 qp"
         "q8 st8 qp";
-    width: 80%;
-    height: 80%;
     margin: auto;
-    padding: 3%;
-
-
 }
 
 .block-questions {
     background-color: #32495E;
+    width: 100%;
 
+}
+
+.quest {
+    width: 100%;
 }
 
 .quest__h1 {
@@ -1532,12 +1532,17 @@
     font-weight: 800;
     font-size: 2.5rem;
     color: white;
+    margin-top: 5%;
     margin-bottom: 5%;
     align-self: center;
+    padding-left: 10%;
     background: #49647D;
-    width: 100%;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.q {
+    padding-left: 35%;
 }
 
 .q1 {
@@ -1569,7 +1574,8 @@
 }
 
 .q8 {
-    grid-area: q8
+    grid-area: q8;
+    padding-bottom: 5%;
 }
 
 .strel1 {
@@ -1615,6 +1621,8 @@
     font-style: normal;
     font-weight: 400;
     color: white;
+    padding-right: 9rem;
+    padding-bottom: 6rem;
 
 }
 
@@ -1625,3 +1633,79 @@
     font-weight: 800;
     color: white;
 }
+
+
+
+/* для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .quest {
+        grid-template-columns: 30% 10% 60%;
+        grid-template-rows: 15% repeat(8, 1fr);
+    }
+
+    .quest__h1 {
+        grid-area: h1;
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-self: center;
+        padding-left: 10%;
+        background: #49647D;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+
+    .quest {
+        display: grid;
+        grid-template-columns: 30% 10% 80%;
+        grid-template-rows: 10% repeat(8, 1fr);
+        margin: auto;
+    }
+
+    .quest__h1 {
+        grid-area: h1;
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-self: center;
+        padding-left: 10%;
+        background: #49647D;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .q {
+        padding-left: 25%;
+    }
+
+    .quest__p {
+        grid-area: qp;
+        font-family: 'TT Hoves';
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        padding-right: 9rem;
+        padding-bottom: 6rem;
+
+    }
+
+}
+
+/* конец блока вопрос ответ*/
+
+/*блок наши услуги*/
