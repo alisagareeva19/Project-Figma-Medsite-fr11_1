@@ -1040,8 +1040,8 @@
 /* блоr вопрос-ответ*/
 .quest {
     display: grid;
-    grid-template-columns: 30% 20% 50%;
-    grid-template-rows: 32% repeat(8, 1fr);
+    grid-template-columns: 30% 10% 60%;
+    grid-template-rows: 25% repeat(8, 1fr);
     grid-template-areas:
         "h1 h1 h1"
         "q1 st1 qh2"
@@ -1072,17 +1072,17 @@
     font-weight: 800;
     font-size: 2.5rem;
     color: white;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-bottom: 5%;
     align-self: center;
-    padding-left: 9rem;
+    padding-left: 10%;
     background: #49647D;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .q {
-    padding-left: 9rem;
+    padding-left: 35%;
 }
 
 .q1 {
@@ -1115,8 +1115,7 @@
 
 .q8 {
     grid-area: q8;
-    margin-bottom: 1%;
-    ;
+    padding-bottom: 5%;
 }
 
 .strel1 {
@@ -1163,7 +1162,7 @@
     font-weight: 400;
     color: white;
     padding-right: 9rem;
-    margin-bottom: 1%;
+    padding-bottom: 6rem;
 
 }
 
@@ -1174,3 +1173,77 @@
     font-weight: 800;
     color: white;
 }
+
+
+
+/* для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .quest {
+        grid-template-columns: 30% 10% 60%;
+        grid-template-rows: 15% repeat(8, 1fr);
+    }
+
+    .quest__h1 {
+        grid-area: h1;
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-self: center;
+        padding-left: 10%;
+        background: #49647D;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+
+    .quest {
+        display: grid;
+        grid-template-columns: 30% 10% 80%;
+        grid-template-rows: 10% repeat(8, 1fr);
+        margin: auto;
+    }
+
+    .quest__h1 {
+        grid-area: h1;
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-self: center;
+        padding-left: 10%;
+        background: #49647D;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .q {
+        padding-left: 25%;
+    }
+
+    .quest__p {
+        grid-area: qp;
+        font-family: 'TT Hoves';
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        padding-right: 9rem;
+        padding-bottom: 6rem;
+
+    }
+
+}
+
+/* конец блока вопрос ответ*/
