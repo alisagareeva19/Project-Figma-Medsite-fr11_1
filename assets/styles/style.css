@@ -437,15 +437,18 @@
     width: 80%;
     height: 80%;
     margin: auto;
-    padding: 4rem;
-    object-fit: cover;
+    padding-bottom: 4%;
+    /*padding: 4rem;*/
+    /*object-fit: cover;
+    padding-left: 10%;
+    padding-right: 10%;*/
 }
 
 .news__heading {
     font-family: 'TT Hoves';
     color: rgba(50, 73, 94, 1);
     /*font-size: 44px;*/
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 800;
 }
@@ -454,29 +457,40 @@
     display: grid;
     grid-template-columns: repeat(4 1fr);
     gap: 15px;
-    width: 100%;
-    height: 100%;
+
+    height: 6.5em;
+    /*width: 100%;
+    height: 100%;*/
 }
 
 .news__img1 {
+    display: grid;
     grid-column: 1/2;
+    width: 12.3rem;
+    height: 13rem;
 }
 
 .news__img2 {
     grid-column: 2/3;
     /*width: 281px;
-    height: 325px;*/
+    height: 325px;
     width: 17.55em;
-    height: 20.3em;
+    height: 20.3em;*/
+    width: 12.28rem;
+    height: 13rem;
 
 }
 
 .news__img3 {
     grid-column: 3/4;
+    width: 12.3rem;
+    height: 13rem;
 }
 
 .news__img4 {
     grid-column: 4/5;
+    width: 12.3rem;
+    height: 13rem;
 }
 
 
@@ -484,8 +498,8 @@
     display: grid;
     grid-template-columns: repeat(4 1fr);
     gap: 15px;
-    width: 100%;
-    height: 100%;
+    width: 52rem;
+    height: 8em;
     object-fit: cover;
     padding-bottom: 4%;
 }
@@ -516,42 +530,45 @@
     font-style: normal;
 
     /*width: 281px;
-    height: 172px;*/
+    height: 172px;
     width: 17.55em;
-    height: 10em;
+    height: 10em;*/
 }
 
 .news_h {
     font-weight: 800;
-    font-size: 16px;
-    line-height: 20px;
+    /*font-size: 16px;
+    line-height: 20px;*/
+    font-size: 0.8rem;
 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .news_text {
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    /*font-size: 14px;
+    line-height: 17px;*/
+    font-size: 0.6rem;
 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .news_link {
     color: #F9F9F9;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    /*font-size: 14px;
+    line-height: 17px;*/
+    font-size: 0.6rem;
     text-decoration: none;
 
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
-.button {
+/*.button {
     display: grid;
     width: 160px;
     height: 50px;
@@ -570,118 +587,561 @@
     align-items: center;
 
     cursor: pointer;
+}*/
+
+.button {
+    display: grid;
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    font-family: 'TT Hoves';
+    color: #32495E;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: #F9F9F9;
+    justify-self: center;
+    align-items: center;
+
+    cursor: pointer;
 }
 
+
+
 /* для декстопов */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .block-news {
+        display: grid;
+        background-color: #F9F9F9;
+    }
 
-/* для планшетов */
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
-
-/* для смартфонов */
-@media screen and (max-width: 767px) {
     .news-container {
         display: grid;
+        width: 80%;
+        height: 80%;
         margin: auto;
+        padding-bottom: 4%;
+        object-fit: cover;
+        /*padding: 4rem;*/
+        /*object-fit: cover;
+    padding-left: 10%;
+    padding-right: 10%;*/
     }
 
     .news__heading {
         font-family: 'TT Hoves';
         color: rgba(50, 73, 94, 1);
         /*font-size: 44px;*/
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 800;
     }
 
     .news__blocks {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
+        grid-template-columns: repeat(4 1fr);
+        gap: 15px;
+
+        height: 6.5em;
+        /*width: 100%;
+    height: 100%;*/
     }
 
     .news__img1 {
+        display: grid;
         grid-column: 1/2;
+        width: 12.3rem;
+        height: 13rem;
     }
 
     .news__img2 {
         grid-column: 2/3;
         /*width: 281px;
-        height: 325px;*/
-        width: 17.55em;
-        height: 20.3em;
+    height: 325px;
+    width: 17.55em;
+    height: 20.3em;*/
+        width: 12.28rem;
+        height: 13rem;
 
     }
 
     .news__img3 {
-        grid-column: 1/2;
+        grid-column: 3/4;
+        width: 12.3rem;
+        height: 13rem;
     }
 
     .news__img4 {
-        grid-column: 2/3;
+        grid-column: 4/5;
+        width: 12.3rem;
+        height: 13rem;
     }
+
 
     .news__textblocks {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
+        grid-template-columns: repeat(4 1fr);
+        gap: 15px;
+        width: 52rem;
+        height: 8em;
+        object-fit: cover;
         padding-bottom: 4%;
+    }
+
+    .news__block1 {
+        grid-column: 1/2;
+    }
+
+    .news__block2 {
+        grid-column: 2/3;
+    }
+
+    .news__block3 {
+        grid-column: 3/4;
+    }
+
+    .news__block4 {
+        grid-column: 4/5;
     }
 
     .news__block1,
     .news__block2,
     .news__block3,
     .news__block4 {
-        width: 17.55em;
-        height: 10em;
+        background-color: #E95258;
+        font-family: 'TT Hoves';
+        color: #F9F9F9;
+        font-style: normal;
+
+        /*width: 281px;
+    height: 172px;
+    width: 17.55em;
+    height: 10em;*/
     }
 
     .news_h {
         font-weight: 800;
-        font-size: 16px;
-        line-height: 20px;
+        /*font-size: 16px;
+    line-height: 20px;*/
+        font-size: 0.8rem;
 
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .news_text {
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        /*font-size: 14px;
+    line-height: 17px;*/
+        font-size: 0.6rem;
 
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .news_link {
         color: #F9F9F9;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
+        /*font-size: 14px;
+    line-height: 17px;*/
+        font-size: 0.6rem;
         text-decoration: none;
 
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
 
+    /*.button {
+    display: grid;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    font-family: 'TT Hoves';
+    color: #32495E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: #F9F9F9;
+    justify-self: center;
+    align-items: center;
+
+    cursor: pointer;
+}*/
+
     .button {
         display: grid;
-        width: 160px;
-        height: 50px;
+        width: 10rem;
+        height: 3rem;
         border: 1px solid #32495E;
         box-sizing: border-box;
         border-radius: 25px;
 
         font-family: 'TT Hoves';
         color: #32495E;
-        font-size: 14px;
+        font-size: 0.9rem;
         font-style: normal;
         font-weight: 500;
 
         background-color: #F9F9F9;
         justify-self: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+}
+
+/* для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-news {
+        display: grid;
+        background-color: #F9F9F9;
+    }
+
+    .news-container {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        padding-bottom: 8%;
+        /*padding: 4rem;*/
+        /*object-fit: cover;
+        padding-left: 10%;
+        padding-right: 10%;*/
+    }
+
+    .news__heading {
+        font-family: 'TT Hoves';
+        color: rgba(50, 73, 94, 1);
+        /*font-size: 44px;*/
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .news__blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+
+        height: 7em;
+        /*width: 100%;
+        height: 100%;*/
+    }
+
+    .news__img1 {
+        display: grid;
+        grid-column: 1/2;
+        width: 12rem;
+        height: 14rem;
+    }
+
+    .news__img2 {
+        grid-column: 2/3;
+        /*width: 281px;
+        height: 325px;
+        width: 17.55em;
+        height: 20.3em;*/
+        width: 12rem;
+        height: 14rem;
+
+    }
+
+    .news__img3 {
+        display: grid;
+        grid-column: 3/4;
+        width: 12rem;
+        height: 14rem;
+    }
+
+    .news__img4 {
+        display: none;
+    }
+
+
+    .news__textblocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.38rem;
+        width: 35rem;
+        height: 8em;
+        object-fit: cover;
+        padding-bottom: 4%;
+    }
+
+    .news__block1 {
+        grid-column: 1/2;
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .news__block2 {
+        grid-column: 2/3;
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .news__block3 {
+        grid-column: 3/4;
+        width: 12rem;
+        height: 7rem;
+    }
+
+    .news__block4 {
+        display: none;
+    }
+
+    .news__block1,
+    .news__block2,
+    .news__block3,
+    .news__block4 {
+        background-color: #E95258;
+        font-family: 'TT Hoves';
+        color: #F9F9F9;
+        font-style: normal;
+
+        /*width: 281px;
+        height: 172px;
+        width: 17.55em;
+        height: 10em;*/
+    }
+
+    .news_h {
+        font-weight: 800;
+        /*font-size: 16px;
+        line-height: 20px;*/
+        font-size: 0.8rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .news_text {
+        font-weight: normal;
+        /*font-size: 14px;
+        line-height: 17px;*/
+        font-size: 0.6rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .news_link {
+        color: #F9F9F9;
+        font-weight: 500;
+        /*font-size: 14px;
+        line-height: 17px;*/
+        font-size: 0.6rem;
+        text-decoration: none;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .button {
+        display: grid;
+        width: 10rem;
+        height: 3rem;
+        border: 1px solid #32495E;
+        box-sizing: border-box;
+        border-radius: 25px;
+
+        font-family: 'TT Hoves';
+        color: #32495E;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 500;
+
+        background-color: #F9F9F9;
+        justify-self: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+    .block-news {
+        display: grid;
+        background-color: #F9F9F9;
+    }
+
+    .news-container {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        padding-bottom: 150%;
+        /*padding: 4rem;*/
+        /*object-fit: cover;
+        padding-left: 10%;
+        padding-right: 10%;*/
+    }
+
+    .news__heading {
+        font-family: 'TT Hoves';
+        color: rgba(50, 73, 94, 1);
+        /*font-size: 44px;*/
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .news__blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 15px;
+
+        height: 0.2rem;
+        /*width: 100%;
+        height: 100%;*/
+        background-color: chartreuse;
+    }
+
+    .news__img1 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 20rem;
+        height: 23rem;
+    }
+
+    .news__img2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        /*width: 281px;
+        height: 325px;
+        width: 17.55em;
+        height: 20.3em;*/
+        width: 20rem;
+        height: 23rem;
+
+    }
+
+    .news__img3 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 20rem;
+        height: 23rem;
+    }
+
+    .news__img4 {
+        display: none;
+    }
+
+
+    .news__textblocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 13rem;
+        /*width: 35rem;*/
+        height: 8em;
+        object-fit: cover;
+        padding-bottom: 4%;
+        background-color: cornflowerblue;
+    }
+
+    .news__block1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 20rem;
+        height: 11.5rem;
+    }
+
+    .news__block2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 20rem;
+        height: 11.5rem;
+    }
+
+    .news__block3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 20rem;
+        height: 11.5rem;
+    }
+
+    .news__block4 {
+        display: none;
+    }
+
+    .news__block1,
+    .news__block2,
+    .news__block3,
+    .news__block4 {
+        background-color: #E95258;
+        font-family: 'TT Hoves';
+        color: #F9F9F9;
+        font-style: normal;
+
+        /*width: 281px;
+        height: 172px;
+        width: 17.55em;
+        height: 10em;*/
+    }
+
+    .news_h {
+        font-weight: 800;
+        /*font-size: 16px;
+        line-height: 20px;*/
+        font-size: 0.8rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .news_text {
+        font-weight: normal;
+        /*font-size: 14px;
+        line-height: 17px;*/
+        font-size: 0.6rem;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .news_link {
+        color: #F9F9F9;
+        font-weight: 500;
+        /*font-size: 14px;
+        line-height: 17px;*/
+        font-size: 0.6rem;
+        text-decoration: none;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .button {
+        display: grid;
+        width: 10rem;
+        height: 3rem;
+        border: 1px solid #32495E;
+        box-sizing: border-box;
+        border-radius: 25px;
+
+        font-family: 'TT Hoves';
+        color: #32495E;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 500;
+
+        background-color: #F9F9F9;
+        justify-self: start;
         align-items: center;
 
         cursor: pointer;
