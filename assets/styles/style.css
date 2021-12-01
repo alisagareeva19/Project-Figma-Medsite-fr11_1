@@ -488,6 +488,90 @@
 
 /* конец блок слоган */
 
+/* блок 'наши специалисты' */
+
+.block-specialists {
+    background-color: #F9F9F9;
+}
+
+.specialists__heading {
+    text-transform: uppercase;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    color: #F9F9F9;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-left: 10%;
+    background-color: rgba(50, 73, 94, 1);
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+.specialists-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    justify-content: center;
+    margin-left: 11%;
+    margin-right: 10%;
+    margin-top: 2rem;
+}
+
+.specialists {
+    grid-column: 1fr;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    /* border: 1px solid blue; */
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.specialists:hover {
+    background: rgba(50, 73, 94, 0.2);
+}
+
+.specialists__photo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.specialists__img {
+    width: 100%;
+    height: auto;
+}
+
+.specialists__content {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.specialists__name {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    color: rgba(50, 73, 94, 1);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.specialists__text {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    color: rgba(50, 73, 94, 1);
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+    /* .specialists-container#8 {
+        display: none;
+    } */
+}
+
+/* конец блока 'наши специалисты' */
+
 /* блок новостей */
 .block-news {
     display: grid;
