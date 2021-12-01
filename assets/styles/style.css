@@ -513,25 +513,42 @@
 
 .specialists-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     justify-content: center;
-    margin-left: 11%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 7%;
     margin-top: 2rem;
+    /* margin-bottom: 1rem; */
 }
 
-.specialists {
+.specialists1,
+.specialists2,
+.specialists3,
+.specialists4,
+.specialists5,
+.specialists6,
+.specialists7,
+.specialists8 {
     grid-column: 1fr;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40% 60%;
     /* border: 1px solid blue; */
     padding: 0.5rem;
     border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
-.specialists:hover {
+.specialists1:hover,
+.specialists2:hover,
+.specialists3:hover,
+.specialists4:hover,
+.specialists5:hover,
+.specialists6:hover,
+.specialists7:hover,
+.specialists8:hover {
     background: rgba(50, 73, 94, 0.2);
 }
 
@@ -542,7 +559,7 @@
 }
 
 .specialists__img {
-    width: 100%;
+    width: 100wv;
     height: auto;
 }
 
@@ -568,10 +585,17 @@
 }
 
 /* для смартфонов */
-@media screen and (max-width: 767px) {
-    /* .specialists-container#8 {
+@media screen and (max-width: 890px) {
+    .specialists-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specialists5,
+    .specialists6,
+    .specialists7,
+    .specialists8 {
         display: none;
-    } */
+    }
 }
 
 /* конец блока 'наши специалисты' */
