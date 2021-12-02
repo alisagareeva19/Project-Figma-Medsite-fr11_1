@@ -2113,8 +2113,8 @@
 
 .price {
     display: grid;
-    grid-template-columns: 30% 15% 30% 15%;
-    grid-template-rows: 20% 1fr 20%;
+    grid-template-columns: 35% 15% 35% 15%;
+    grid-template-rows: 15% 65% 20%;
     grid-template-areas:
         "priceh priceh priceh priceh"
         "col1 col2 col3 col4"
@@ -2150,3 +2150,97 @@
     justify-content: center;
 
 }
+
+.price-h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 17px;
+    margin-bottom: 2rem;
+}
+
+.price__col1-name,
+.price__col3-name {
+    font-weight: 800;
+    color: #8093AC;
+    margin-top: 2rem;
+}
+
+.price__col4-num,
+.price__col2-num {
+    font-weight: 800;
+    color: #32495E;
+    margin-bottom: 2rem;
+}
+
+/* для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .price__h1 {
+        font-size: 1.5em
+    }
+
+    .price {
+        display: grid;
+        grid-template-columns: 30% 1fr 30% 1fr;
+        grid-template-rows: 15% 70% 20%;
+        grid-template-areas:
+            "priceh priceh priceh priceh"
+            "col1 col2 col3 col4"
+            "pb pb pb pb";
+        width: 80%;
+        margin: auto;
+        grid-gap: 5%;
+    }
+
+    .price__col1-name,
+    .price__col3-name {
+        font-weight: 800;
+        color: #8093AC;
+        margin-top: 1.5rem;
+    }
+
+    .price__col4-num,
+    .price__col2-num {
+        font-weight: 800;
+        color: #32495E;
+        margin-bottom: 30%;
+
+    }
+
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+    .price {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 10% 70% 20%;
+        grid-template-areas:
+            "priceh priceh"
+            "col1 col2"
+            "pb pb";
+        width: 80%;
+        margin: auto;
+    }
+
+    .price__col1-name,
+    .price__col3-name {
+        font-weight: 800;
+        color: #8093AC;
+        margin-top: 1.5rem;
+    }
+
+    .price__col4-num,
+    .price__col2-num {
+        font-weight: 800;
+        color: #32495E;
+        margin-bottom: 30%;
+
+    }
+
+    .price__col3,
+    .price__col4 {
+        display: none;
+    }
+}
+
+/*конец блока прайс-лист*/
