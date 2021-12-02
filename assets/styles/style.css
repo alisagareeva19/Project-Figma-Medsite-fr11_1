@@ -1844,6 +1844,7 @@
         grid-template-columns: 30% 10% 80%;
         grid-template-rows: 10% repeat(8, 1fr);
         margin: auto;
+        width: 100%;
     }
 
     .quest__h1 {
@@ -1860,6 +1861,7 @@
         background: #49647D;
         border: 1px solid #000000;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 73%;
     }
 
     .q {
@@ -1883,6 +1885,7 @@
 /* конец блока вопрос ответ*/
 
 /*блок наши услуги*/
+
 .block-services {
     background-color: #32495E;
     width: 100%;
@@ -1894,9 +1897,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: 20% 1fr 20%;
+    grid-gap: 7%;
+    grid-gap: 2rem;
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 7%;
+    margin-top: 2rem;
 }
 
 .services__head {
+    grid-area: 1/1/2/5;
     font-family: 'TT Hoves';
     font-style: normal;
     font-weight: 800;
@@ -1905,21 +1915,28 @@
     margin-top: 5%;
     margin-bottom: 5%;
     align-self: center;
-    padding-left: 10%;
 }
 
 .servhead {
-    grid-area: 1/1/2/5;
     font-size: 1rem;
     font-style: normal;
     font-weight: 800;
 }
 
 .services__cardio {
+    border: 1px solid black;
     grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    background-image: url(../img/med.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
-
+    height: 100%;
+    word-wrap: break-word;
 }
+
 
 .services__travma {
     grid-area: 2/2/3/3
@@ -1934,8 +1951,18 @@
 }
 
 .services__text {
+    grid-area: 2/1/3/1;
     background-color: #E95258;
+    font-family: 'TT Hoves';
+    padding: 1rem;
+}
 
+.services__text-p {
+    font-family: 'TT Hoves';
+    font-size: 3%;
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word;
 }
 
 .buttonserv {
@@ -1944,5 +1971,4 @@
 
 .img {
     max-width: 100%;
-    position: relative;
 }
