@@ -321,7 +321,7 @@
     font-family: 'TT Hoves';
     font-style: normal;
     color: #F9F9F9;
-    font-size: rem;
+    font-size: 1rem;
     font-weight: 600;
     padding-left: 15%;
     padding-right: 25%;
@@ -409,7 +409,83 @@
     .main__fon1 {
         display: none;
     }
+
+    .main-container1 .button {
+        margin-left: 5%;
+    }
 }
+
+/* конец слогана */
+
+/* блок информации */
+
+.information-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.information__picture {
+    grid-column: 1/2;
+    background-color: rgba(50, 73, 94, 1);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template: 1fr;
+    align-items: center;
+}
+
+.information__img {
+    grid-column: 1/2;
+    width: 100%;
+    height: auto;
+}
+
+.information__content {
+    grid-column: 2/3;
+    background-color: #F9F9F9;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    align-items: center;
+}
+
+.information__block {
+    margin-left: 3vw;
+    margin-right: 8vw;
+}
+
+.information__text {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    color: rgba(50, 73, 94, 1);
+    /* font-size: 1rem; */
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .information-container {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+
+    .information__picture {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .information__content {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .information__text {
+        font-size: 1rem;
+    }
+}
+
+/* конец блока информации */
 
 /* ----------------------------- нас рекомендуют контакты и футер все вместе */
 .block-contacts {
