@@ -417,6 +417,74 @@
 
 /* конец слогана */
 
+/* блок с раскрывающимся списком контактов */
+
+.button__wrap {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.menu__contacts__wrap {
+    display: inline-block;
+    position: fixed;
+    right: 4vw;
+    bottom: 1vw;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.contacts__wrap {
+    display: none;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 18rem;
+}
+
+/* элементы внутри выпадающего списка */
+.contacts__wrap a {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Показать выпадающие контакты при наведении курсора */
+.menu__contacts__wrap:hover .contacts__wrap {
+    display: inline-block;
+}
+
+.menu__contacts__wrap:hover .buttonimg__wrap {
+    background-color: #e952578c;
+    border-radius: 50px;
+}
+
+.img1__wrap:hover {
+    background-color: #c33a7c8c;
+    border-radius: 50px;
+}
+
+.img2__wrap:hover {
+    background-color: #32495e8c;
+    border-radius: 50px;
+}
+
+.img3__wrap:hover {
+    background-color: #4599ff8c;
+    border-radius: 50px;
+}
+
+.img4__wrap:hover {
+    background-color: #14ac518c;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .menu__contacts__wrap {
+        right: 1vw;
+        bottom: 0.5vw;
+        zoom: 0.8;
+    }
+}
+
+/* конец блока с раскрывающимся списком контактов */
+
 /* блок информации */
 
 .information-container {
