@@ -350,6 +350,10 @@
     margin-bottom: 2rem;
 }
 
+.main__phonecall {
+    text-decoration: none;
+}
+
 .button {
     display: grid;
     width: 10rem;
@@ -554,6 +558,220 @@
 }
 
 /* конец блока информации */
+
+/* блоr вопрос-ответ*/
+
+.quest {
+    display: grid;
+    grid-template-columns: 30% 10% 60%;
+    grid-template-rows: 25% repeat(8, 1fr);
+    grid-template-areas:
+        "h1 h1 h1"
+        "q1 st1 qh2"
+        "q2 st2 qp"
+        "q3 st3 qp"
+        "q4 st4 qp"
+        "q5 st5 qp"
+        "q6 st6 qp"
+        "q7 st7 qp"
+        "q8 st8 qp";
+    margin: auto;
+}
+
+.block-questions {
+    background-color: #32495E;
+    width: 100%;
+
+}
+
+.quest {
+    width: 100%;
+}
+
+.quest__h1 {
+    grid-area: h1;
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-self: center;
+    padding-left: 10%;
+    background: #49647D;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.q {
+    padding-left: 35%;
+}
+
+.q1 {
+    grid-area: q1
+}
+
+.q2 {
+    grid-area: q2
+}
+
+.q3 {
+    grid-area: q3
+}
+
+.q4 {
+    grid-area: q4
+}
+
+.q5 {
+    grid-area: q5
+}
+
+.q6 {
+    grid-area: q6
+}
+
+.q7 {
+    grid-area: q7
+}
+
+.q8 {
+    grid-area: q8;
+    padding-bottom: 5%;
+}
+
+.strel1 {
+    grid-area: st1
+}
+
+.strel2 {
+    grid-area: st2
+}
+
+.strel3 {
+    grid-area: st3
+}
+
+.strel4 {
+    grid-area: st4
+}
+
+.strel5 {
+    grid-area: st5
+}
+
+.strel6 {
+    grid-area: st6
+}
+
+.strel7 {
+    grid-area: st7
+}
+
+.strel8 {
+    grid-area: st8
+}
+
+.quest__h2 {
+    grid-area: qh2;
+}
+
+.quest__p {
+    grid-area: qp;
+    font-family: 'TT Hoves';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    padding-right: 9rem;
+    padding-bottom: 6rem;
+
+}
+
+.q,
+.quest__h2 {
+    font-family: 'TT Hoves';
+    font-style: normal;
+    font-weight: 800;
+    color: white;
+}
+
+
+
+/* для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .quest {
+        grid-template-columns: 30% 10% 60%;
+        grid-template-rows: 15% repeat(8, 1fr);
+    }
+
+    .quest__h1 {
+        grid-area: h1;
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-self: center;
+        padding-left: 10%;
+        background: #49647D;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+
+    .quest {
+        display: grid;
+        grid-template-columns: 30% 10% 80%;
+        grid-template-rows: 10% repeat(8, 1fr);
+        margin: auto;
+        width: 100%;
+    }
+
+    .quest__h1 {
+        grid-area: h1;
+        font-family: 'TT Hoves';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        align-self: center;
+        padding-left: 10%;
+        background: #49647D;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 73%;
+    }
+
+    .q {
+        padding-left: 25%;
+    }
+
+    .quest__p {
+        grid-area: qp;
+        font-family: 'TT Hoves';
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        color: white;
+        padding-right: 9rem;
+        padding-bottom: 6rem;
+
+    }
+
+}
+
+/* конец блока вопрос ответ*/
 
 /* ----------------------------- нас рекомендуют контакты и футер все вместе */
 .block-contacts {
