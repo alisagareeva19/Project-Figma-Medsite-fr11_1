@@ -2506,7 +2506,7 @@
 
 .price {
     display: grid;
-    grid-template-columns: 30% 12% 30% 12%;
+    grid-template-columns: 30% 10% 30% 10%;
     grid-template-rows: 15% 65% 10%;
     grid-template-areas: "priceh priceh priceh priceh"
         "col1 col2 col3 col4"
