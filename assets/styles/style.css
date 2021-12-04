@@ -718,38 +718,10 @@
     margin-bottom: 9%;
 }
 
-
-/*.news__img1 {
-    display: grid;
-    grid-column: 1/2;
-    width: 12.3rem;
-    height: 13rem;
-}
-
-.news__img2 {
-    grid-column: 2/3;
-    width: 12.28rem;
-    height: 13rem;
-
-}
-
-.news__img3 {
-    grid-column: 3/4;
-    width: 12.3rem;
-    height: 13rem;
-}
-
-.news__img4 {
-    grid-column: 4/5;
-    width: 12.3rem;
-    height: 13rem;
-}*/
-
-
 .news__blocks {
     display: grid;
     grid-template-columns: repeat(4 1fr);
-    /*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
+    /*grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));*/
     gap: 15px;
     width: 73rem;
     height: 10em;
@@ -768,6 +740,7 @@
     background-size: 100%;
     width: 100%;
     height: 185%;
+    object-fit: cover;
 }
 
 .text-block1 {
@@ -789,6 +762,7 @@
     background-size: 100%;
     width: 100%;
     height: 185%;
+    object-fit: cover;
 }
 
 .text-block2 {
@@ -806,6 +780,7 @@
     background-size: 100%;
     width: 100%;
     height: 185%;
+    object-fit: cover;
 }
 
 .text-block3 {
@@ -824,6 +799,7 @@
     grid-template-rows: 50% 50%;
     width: 100%;
     height: 185%;
+    object-fit: cover;
 }
 
 .text-block4 {
@@ -997,7 +973,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     /*grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));*/
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);*/
 }
 
 .reports_text {
@@ -1034,7 +1011,7 @@
 }
 
 .reports__button-text {
-    padding-top: 8%;
+    padding-top: 9%;
 }
 
 .play {
@@ -1149,6 +1126,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
     /*width: 293px;
     height: 180px;*/
 }
@@ -1161,6 +1139,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content3 {
@@ -1171,6 +1150,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content4 {
@@ -1181,6 +1161,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 
@@ -1192,6 +1173,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content6 {
@@ -1202,6 +1184,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content7 {
@@ -1212,6 +1195,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content8 {
@@ -1222,6 +1206,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 
@@ -1233,6 +1218,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content10 {
@@ -1243,6 +1229,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content11 {
@@ -1253,6 +1240,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 .reports__content12 {
@@ -1263,6 +1251,7 @@
     background-size: 100%;
     width: 18.28rem;
     height: 11.25rem;
+    object-fit: cover;
 }
 
 
@@ -1287,6 +1276,273 @@
     margin-top: 4%;
     margin-bottom: 4%;
     cursor: pointer;
+}
+
+
+/* для декстопов */
+@media screen and (max-width: 1200px) {
+
+    .reports-container {
+        width: 85%;
+        height: 85%;
+    }
+
+    .reports__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .reports__content1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .reports__content2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .reports__content3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .reports__content4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .reports__content5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .reports__content6 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .reports__content7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .reports__content8 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .reports__content9 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .reports__content10 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .reports__content11 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .reports__content12 {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+}
+
+/* для планшетов */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    .reports-container {
+        padding-top: 4%;
+        padding-bottom: 6%;
+    }
+
+    .reports__tabs {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        margin-bottom: 3%;
+    }
+
+    .reports__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-right: -10%;
+    }
+
+    .reports__content1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .reports__content2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .reports__content4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .reports__content5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .reports__content7 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .reports__content8 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .reports__content10 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .reports__content11 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .reports__content3,
+    .reports__content6,
+    .reports__content9,
+    .reports__content12 {
+        display: none;
+    }
+
+}
+
+/* для смартфонов */
+@media screen and (max-width: 767px) {
+
+    .reports-container {
+        display: grid;
+        width: 90%;
+        height: 90%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .reports__heading {
+        font-size: 1.7rem;
+        margin-bottom: 6%;
+    }
+
+    .reports__tabs {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        font-size: 0.8rem;
+        margin-bottom: 5%;
+    }
+
+    .reports__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .reports_text {
+        font-size: 0.7rem;
+    }
+
+    .reports__button {
+        width: 7rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+
+    .reports__content1 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .reports__content2 {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .reports__content3 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .reports__content4 {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .reports__content5 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .reports__content6 {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .reports__content7,
+    .reports__content8,
+    .reports__content9,
+    .reports__content10,
+    .reports__content11,
+    .reports__content12 {
+        display: none;
+    }
+
+    .reports__button2 {
+        margin-top: 5%;
+    }
+
+}
+
+/* для small phone */
+@media screen and (max-width: 479px) {
+
+    .reports__heading {
+        font-size: 1.3rem;
+    }
+
+    .reports__content2,
+    .reports__content4,
+    .reports__content6 {
+        display: none;
+    }
+
+    .reports__tabs {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        font-size: 0.8rem;
+    }
 }
 
 /*коец блока отчеты*/
