@@ -22,15 +22,23 @@
             <div class="header-container2">
                 <nav class="menu">
 
-                    <a class="menu__items" href="#">Главная</a>
-                    <a class="menu__items" href="#">Услуги
+                    <a class="menu__items" href="#header-container">Главная</a>
+
+                        <button class="menu__items" href="#block-services">Услуги
+                            <img class="menu__element" src="assets/img/Polygon.png" alt="element">
+                            <div class="dropdown-content">
+                                <a href="#">Кардио-реабилитационный центр</a>
+                                <a href="#">Травма-реабилитационный центр</a>
+                                <a href="#">Кафе</a>
+                                <a href="#">Сауна</a>
+                            </div>
+                        </button>
+                    
+                    <a class="menu__items" href="#block-reports">Отчеты</a>
+                    <a class="menu__items" href="#block-specialists">О нас
                         <img class="menu__element" src="assets/img/Polygon.png" alt="element">
                     </a>
-                    <a class="menu__items" href="#">Отчеты</a>
-                    <a class="menu__items" href="#">О нас
-                        <img class="menu__element" src="assets/img/Polygon.png" alt="element">
-                    </a>
-                    <a class="menu__items" href="#">Новости</a>
+                    <a class="menu__items" href="#block-news">Новости</a>
                     <a class="menu__items" href="#">РУС
                         <img class="menu__element" src="assets/img/Polygon.png" alt="element">
                     </a>
@@ -38,11 +46,11 @@
                         <button class="dropbtn">Меню<img class="menu__element" src="assets/img/Polygon.png"
                                 alt="element"></button>
                         <div class="dropdown-content">
-                            <a href="#">Главная</a>
-                            <a href="#">Услуги</a>
-                            <a href="#">Отчеты</a>
-                            <a href="#">О нас</a>
-                            <a href="#">Новости</a>
+                            <a href="#header">Главная</a>
+                            <a href="#block-services">Услуги</a>
+                            <a href="#block-reports">Отчеты</a>
+                            <a href="#block-specialists">О нас</a>
+                            <a href="#block-news">Новости</a>
                             <a href="#">РУС</a>
                         </div>
                     </div>
@@ -446,7 +454,7 @@
                         <a href="#" class="news_link">Читать полностью</a>
                     </div>
                 </div>
-                
+
             </div>
 
             <button class="news__button" href="#">Все новости</button>
@@ -535,7 +543,7 @@
                 <nav class="map-site__navbar">
                     <a class="navbar__footer" href="#header-container">Главная</a>
                     <a class="navbar__footer" href="#block-services">Наши услуги</a>
-                    <a class="navbar__footer" href="#">Отчеты</a>
+                    <a class="navbar__footer" href="#block-reports">Отчеты</a>
                     <a class="navbar__footer" href="#block-specialists">О нас</a>
                     <a class="navbar__footer" href="#contacts">Контакты</a>
                 </nav>

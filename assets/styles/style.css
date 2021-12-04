@@ -131,6 +131,8 @@
     font-weight: 500;
     text-decoration: none;
     justify-self: end;
+    border: none;
+    background-color: #F9F9F9;
 }
 
 .menu__element {
@@ -139,6 +141,46 @@
     padding-left: 0.2em;
     align-content: center;
 }
+
+/*.menu__items_drop {
+    position: relative;
+    display: inline-block;
+}*/
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(253, 237, 237, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    font-family: 'TT Hoves';
+    font-size: 100%;
+    background-color: #F9F9F9;
+    color: rgba(50, 73, 94, 1);
+    font-style: normal;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.menu__items:hover .dropdown-content {
+    display: block;
+}
+
+
 
 /* для декстопов */
 @media screen and (min-width: 1024px) {
