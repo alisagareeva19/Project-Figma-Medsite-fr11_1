@@ -647,7 +647,7 @@
     font-family: 'TT Hoves';
     font-style: normal;
     color: #F9F9F9;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     padding-left: 10%;
     background-color: rgba(50, 73, 94, 1);
@@ -739,6 +739,10 @@
     .specialists7,
     .specialists8 {
         display: none;
+    }
+
+    .specialists__heading {
+        font-size: 1.5rem;
     }
 }
 
@@ -1279,7 +1283,7 @@
     }
 
     .reports__heading {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-bottom: 6%;
     }
 
@@ -1649,6 +1653,10 @@
         display: grid;
         width: 90%;
         height: 90%;
+    }
+
+    .news__heading {
+        font-size: 1.5rem;
     }
 
     .news__blocks {
@@ -2621,6 +2629,10 @@
             "pb pb";
         width: 80%;
         margin: auto;
+    }
+
+    .price__h1 {
+        font-size: 1.5rem;
     }
 
     .price__col1-name,
