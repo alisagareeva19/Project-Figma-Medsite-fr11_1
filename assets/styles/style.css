@@ -92,6 +92,7 @@
     display: grid;
     grid-column: 1/2;
     background-color: #E95258;
+    padding-bottom: 5%;
 }
 
 .header__logo-container {
@@ -109,6 +110,7 @@
     display: grid;
     grid-column: 2/3;
     background-color: #F9F9F9;
+    padding-bottom: 5%;
 }
 
 .menu {
@@ -2255,6 +2257,8 @@
     width: 100%;
     font-family: 'TT Hoves';
     color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .services {
@@ -2274,8 +2278,7 @@
     font-weight: 800;
     font-size: 2.5rem;
     color: white;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     align-self: center;
 }
 
@@ -2326,7 +2329,29 @@
 
 .services-button {
     display: grid;
-    grid-area: 3/2/4/4
+    grid-area: 3/2/4/4;
+}
+
+.button_buttonserv {
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid #F9F9F9;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    font-family: 'TT Hoves';
+    color: #F9F9F9;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: #32495E;
+    justify-self: center;
+    align-items: center;
+
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .img {
@@ -2471,14 +2496,15 @@
 
 .price {
     display: grid;
-    grid-template-columns: 35% 15% 35% 15%;
-    grid-template-rows: 15% 65% 20%;
+    grid-template-columns: 30% 12% 30% 12%;
+    grid-template-rows: 15% 65% 10%;
     grid-template-areas: "priceh priceh priceh priceh"
         "col1 col2 col3 col4"
         "pb pb pb pb";
     width: 80%;
     margin: auto;
     grid-gap: 5%;
+    padding-bottom: 2%;
 }
 
 .price__col1 {
@@ -2505,7 +2531,6 @@
     grid-area: pb;
     display: grid;
     justify-content: center;
-
 }
 
 .price-h2 {
@@ -2529,6 +2554,26 @@
     margin-bottom: 2rem;
 }
 
+.price-button {
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    font-family: 'TT Hoves';
+    color: #32495E;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: #FFFFFF;
+    justify-self: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
 /* для планшетов */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .price__h1 {
@@ -2545,6 +2590,7 @@
         width: 80%;
         margin: auto;
         grid-gap: 5%;
+        padding-bottom: 5%;
     }
 
     .price__col1-name,
