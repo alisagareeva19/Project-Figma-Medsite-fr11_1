@@ -152,8 +152,8 @@
     display: none;
     position: absolute;
     background-color: #F9F9F9;
-    width: 150px;
-    min-width: 150px;
+    width: 140px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(253, 237, 237, 0.2);
     z-index: 1;
 }
@@ -284,8 +284,8 @@
         display: none;
         position: absolute;
         background-color: #F9F9F9;
-        width: 100px;
-        min-width: 100px;
+        width: 88px;
+        min-width: 88px;
         box-shadow: 0px 8px 16px 0px rgba(253, 237, 237, 0.2);
         z-index: 1;
     }
